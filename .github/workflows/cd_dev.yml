@@ -6,7 +6,7 @@ on:
 jobs:
   redeploy_everything:
     runs-on: ubuntu-latest
-    name: Deploying everything to the staging cluster
+    name: Deploying everything to the sta dev
     steps:
       - run: |
           echo "${{ secrets.SSH_PRIVATEKEY }}" &> ~/ssh_key
