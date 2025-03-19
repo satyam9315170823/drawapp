@@ -5,6 +5,7 @@ export default async function Home() {
     <div>
     hii
     {user?.email}
+      {user?.password}
     </div>
   );
 }
