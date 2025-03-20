@@ -22,7 +22,7 @@ jobs:
 
       - name: Deploy to Server
         run: |
-          ssh -o StrictHostKeyChecking=no -i /home/runner/.ssh/id_rsa root@13.60.223.212 -t "
+          ssh -o StrictHostKeyChecking=no -i /home/runner/.ssh/id_rsa ubuntu@13.60.223.212 -t "
             cd drawapp &&
             git pull origin main &&
             export PATH=/root/.nvm/versions/node/v22.13.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin &&
